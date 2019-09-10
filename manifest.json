@@ -16,6 +16,13 @@
     "default_title": "Noam",
     "default_popup": "popup/service.html",
     "browser_style": true
-  }
+  },
+
+  "permissions": [
+    "storage",
+    "bookmarks",
+    "tabs",
+    "<all_urls>"
+  ]
 
 }

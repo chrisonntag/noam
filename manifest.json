@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Noam",
+  "version": "1.0",
+
+  "description": "Adds a browser action icon to the toolbar.",
+  "homepage_url": "https://github.com/chrisonntag/noam",
+  "icons": {
+    "48": "icons/noam-48.png",
+    "96": "icons/noam-96.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/noam-32.png",
+    "default_title": "Noam",
+    "default_popup": "popup/service.html",
+    "browser_style": true
+  }
+
+}

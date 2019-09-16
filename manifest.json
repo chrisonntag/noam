@@ -4,23 +4,35 @@
   "name": "Noam",
   "version": "1.0",
 
-  "description": "Adds a browser action icon to the toolbar.",
+  "description": "Opens configurable online web chat apps in a new window.",
   "homepage_url": "https://github.com/chrisonntag/noam",
   "icons": {
     "48": "icons/noam-48.png",
     "96": "icons/noam-96.png"
   },
 
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "addon@chrisonntag.com"
+    }
+  },
+
   "browser_action": {
     "default_icon": "icons/noam-32.png",
     "default_title": "Noam",
-    "default_popup": "popup/service.html",
     "browser_style": true
+  },
+
+  "background": {
+    "scripts": ["background.js"]
   },
 
   "permissions": [
     "storage",
-    "bookmarks",
     "tabs",
     "<all_urls>"
   ]
